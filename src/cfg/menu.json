@@ -1,0 +1,9 @@
+{
+  "text": "Events",
+  "icon": "nf nf-fa-users",
+  "items": [{
+    "text": "My events",
+    "icon": "nf nf-fa-user",
+    "link": "home"
+  }]
+}

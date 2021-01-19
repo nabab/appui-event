@@ -1,0 +1,19 @@
+{
+  "name": "bbn/appui-event",
+  "description": "Events management system",
+  "keywords": ["event","calendar","appui"],
+  "homepage": "https://github.com/nabab/appui-event",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Nabet",
+      "email": "thomas.nabet@gmail.com",
+      "homepage": "https://bbn.solutions",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "bbn/bbn": "dev-master"
+  }
+}
