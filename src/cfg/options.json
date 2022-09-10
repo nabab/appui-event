@@ -1,10 +1,43 @@
-[{
-  "text": "Events",
-  "code": "events",
-  "id_parent": "appui",
-  "icon": "nf nf-fa-clock",
+{
   "cfg": {
-    "desc": "This section is automatically generated and should not be modified by any user.",
-    "show_code": 1
-  }
-}]
+    "show_code": 1,
+    "show_icon": 1,
+    "allow_children": 1,
+    "i18n": "en"
+  },
+  "id_parent": ["appui"],
+  "text": "Events",
+  "code": "event",
+  "id_alias": ["plugin", "list", "templates", "option", "appui"],
+  "icon": "nf nf-oct-calendar",
+  "plugin": true,
+  "items": [
+    {
+      "text": "Types",
+      "code": "types",
+      "icon": "nf nf-fa-shapes",
+      "cfg": {
+        "show_code": 1,
+        "show_icon": 1,
+        "allow_children": 1
+      },
+      "items": [
+        {
+          "text": "Publication",
+          "code": "publication",
+          "icon": "nf nf-fa-leanpub"
+        },
+        {
+          "text": "Appointment",
+          "code": "appointment",
+          "icon": "nf nf-fa-clock"
+        },
+        {
+          "text": "Work schedule",
+          "code": "wp",
+          "icon": "nf nf-mdi-calendar_multiple_check"
+        }
+      ]
+    }
+  ]
+}
