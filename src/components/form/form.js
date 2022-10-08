@@ -4,8 +4,7 @@
   return {
     props: {
       action: {
-        type: String,
-        default: appui.plugins['appui-event'] + '/new'
+        type: String
       },
       source: {
       	type: Object
@@ -44,6 +43,7 @@
         groups: appui.app.groups,
 	      root: appui.plugins['appui-event'] + '/',
         currentMode: this.mode,
+        currentAction: this.action,
         formData: this.source || {
           start: bbn.fn.dateSQL(null, true),
           end: null,
@@ -63,9 +63,26 @@
         else {
           appui.error(d.error || null);
         }
+      },
+      setDefaultAction(){
+        let defaultAction = appui.plugins['appui-event'] +
+            '/actions/' +
+            (this.source.id ? 'update' : 'insert');
+        if (!this.action && (defaultAction !== this.currentAction)) {
+          this.currentAction = defaultAction;
+        }
+        else if (this.action && (this.currentAction !== this.action)) {
+          this.currentAction = this.action;
+        }
       }
     },
+    created() {
+      this.setDefaultAction();
+    },
     watch: {
+      action() {
+        this.setDefaultAction();
+      },
       currentMode(v) {
         switch (v) {
           case 'public':

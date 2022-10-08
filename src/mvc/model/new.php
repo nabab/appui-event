@@ -32,7 +32,7 @@ if ($model->hasData(['id_type', 'start', 'name']) && Str::isDateSql($model->data
   return $model->data['res'];
 }
 else {
-  $types = $ev->getOptionsTextValue('types');
+  $types = $ev->getOptionsTextValueRef('types');
   return [
     'types' => $types
   ];

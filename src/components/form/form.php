@@ -1,6 +1,6 @@
 <!-- HTML Document -->
 
-<bbn-form :action="action"
+<bbn-form :action="currentAction"
           :source="formData"
           @success="onSuccess">
 	<div class="bbn-grid-fields bbn-c bbn-padded">
@@ -55,7 +55,8 @@
 
     <label><?= _("End") ?></label>
     <div>
-      <bbn-datetimepicker v-model="formData.end"/>
+      <bbn-datetimepicker v-model="formData.end"
+                          :nullable="true"/>
     </div>
 
     <label v-if="recurring"><?= _("Recurrence") ?></label>
