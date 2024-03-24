@@ -40,7 +40,7 @@
           {text: bbn._("Private"), value: 'private'},
           {text: bbn._("Group"), value: 'group'}
         ],
-        groups: appui.app.groups,
+        groups: appui.groups,
 	      root: appui.plugins['appui-event'] + '/',
         currentMode: this.mode,
         currentAction: this.action,
@@ -93,7 +93,7 @@
           case 'private':
             this.formData.public = 0;
             this.formData.id_group = null;
-            this.formData.id_user = appui.app.userId;
+            this.formData.id_user = appui.userId;
             break;
           case 'private':
             this.formData.public = 0;
