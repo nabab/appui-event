@@ -3,7 +3,7 @@
 <div class="bbn-overlay">
   <bbn-router :nav="true"
               :autoload="true">
-  	<bbn-container :static="true"
+  	<bbn-container :fixed="true"
                    :title="_('List')"
                    url="list">
     	<bbn-table :source="source.root + 'data/list'"
@@ -45,7 +45,7 @@
                      :notext="true"/>
       </bbn-table>
     </bbn-container>
-  	<bbn-container :static="true"
+  	<bbn-container :fixed="true"
                    url="calendar"
                    :scrollable="false"
                    :title="_('Calendar')">

@@ -3,10 +3,10 @@
 <div class="bbn-overlay">
   <bbn-router :nav="true"
               :autoload="true">
-  	<bbn-container :static="true"
+  	<bbn-container :fixed="true"
                    url="list"
                    component="appui-event-list"/>
-  	<bbn-container :static="true"
+  	<bbn-container :fixed="true"
                    url="calendar"
                    :scrollable="false"
                    :title="_('Calendar')">
