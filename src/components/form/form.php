@@ -3,7 +3,7 @@
 <bbn-form :action="currentAction"
           :source="formData"
           @success="onSuccess">
-	<div class="bbn-grid-fields bbn-c bbn-padded">
+	<div class="bbn-grid-fields bbn-c bbn-padding">
     <label><?= _("Name of the event") ?></label>
     <div>
       <bbn-input v-model="formData.name"
