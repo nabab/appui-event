@@ -9,7 +9,7 @@
   	<bbn-container :fixed="true"
                    url="calendar"
                    :scrollable="false"
-                   :title="_('Calendar')">
+                   :label="_('Calendar')">
       <bbn-calendar></bbn-calendar>
     </bbn-container>
   </bbn-router>
