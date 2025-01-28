@@ -18,7 +18,7 @@
                  :editor-options="{types: source.types}">
         <bbns-column field="id"
                      label="<?= _("ID") ?>"
-                     :hidden="true"
+                     :invisible="true"
                      :editable="false"
                      :min-width="150"/>
         <bbns-column field="id_type"
