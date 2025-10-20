@@ -1,7 +1,7 @@
 <!-- HTML Document -->
 
 <div class="bbn-overlay">
-  <bbn-router :nav="true"
+  <bbn-router mode="tabs"
               :autoload="true">
   	<bbn-container :fixed="true"
                    url="list"
