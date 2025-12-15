@@ -12,7 +12,7 @@ $ev = new bbn\Appui\Event($model->db);
 $cfg = $ev->getClassCfg();
 $grid = new bbn\Appui\Grid($model->db, $model->data, [
   'table' => $cfg['table'],
-  'fields' => $cfg['fields']
+  'fields' => array_values($cfg['arch']['events'])
 ]);
 
 return $grid->getDataTable();
